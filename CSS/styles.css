@@ -2,5 +2,146 @@
 html {font-size: 18px;}
 body {
     background: #ffffff;
-    font-family: ""
+    font-family: 'Merriweather', serif;
+    margin: 0px;
 }
+
+header {
+    width: 100%;
+    background-color: #2d3945;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    width:auto;
+}
+
+h3 {
+    color: #2d3945;
+    font-weight: bold;
+}
+
+h2 {
+    color: #2d3945;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+p{
+    color: darkgray;
+    text-align: center;
+
+}
+
+fieldset {
+    max-width: 350px;
+    border: none;
+
+}
+
+.formstyle {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: start;
+    width: 100%;
+
+}
+
+.c-label {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: grey;
+
+}
+
+.c-form {
+    background-color: #eff0f1;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    margin-right: 0.5rem;
+}
+
+.check-label {
+    font-size: 14px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: grey;
+
+}
+
+.check-box {
+    background-color: #eff0f1;
+    padding: 1rem;
+}
+
+.select-box {
+    background-color: #eff0f1;
+    padding: 1rem;
+    border: none;
+    text-align: right;
+}
+
+::placeholder {
+    font-style: italic;
+    text-align: right;
+}
+
+.formstyle_button {
+    display: inline;
+
+}
+
+.text-box {
+    background-color: #eff0f1;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.c-button {
+    background-color: #4ebbb5;
+    padding: 1.5rem;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 1rem;
+    border: none;
+    width: 100%;
+}
+
+.first-divider {
+    border-bottom: double 5px grey;
+    margin: 1rem;
+}
+.second-divider {
+    border-top: 3px solid #bbb;
+    margin: 1rem;
+}
+
+footer {
+    width: 100%;
+
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+
