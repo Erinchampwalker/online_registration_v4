@@ -17,7 +17,6 @@ header {
 .container {
     display: flex;
     flex-direction: column;
-
 }
 
 section {
@@ -74,7 +73,16 @@ fieldset {
     border: none;
     width: 100%;
     margin-right: 0.5rem;
+    
 }
+
+.c-form:focus {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.c-form:hover {
+    outline: 3px solid rgb(104, 68, 231);
+}    
 
 .check-label {
     font-size: 14px;
@@ -90,10 +98,18 @@ fieldset {
 }
 
 .select-box {
+    display: flex;
     background-color: #eff0f1;
     padding: 1rem;
     border: none;
     text-align: right;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+} 
+
+select#state.select-box {
+ color:rgb(129, 129, 129);
+ font-size: 16px;
 }
 
 ::placeholder {
@@ -112,8 +128,26 @@ fieldset {
     border: none;
     border-radius: 5px;
     text-align: center;
-
 }
+
+.text-box:focus {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.text-box:hover {
+    outline: 3px solid rgb(104, 68, 231);
+}  
+
+.select-box:focus {
+    outline: 3px solid rgb(104, 68, 231);
+}
+
+.select-box:hover {
+    outline: 3px solid rgb(104, 68, 231);
+}  
+
+
+
 
 .c-button {
     background-color: #4ebbb5;
@@ -127,9 +161,15 @@ fieldset {
     width: 100%;
 }
 
+.c-button:hover {
+    background-color: #88ece7;
+
+}
+
 .first-divider {
-    border-bottom: double 5px grey;
+    border-top: 3px solid #bbb;
     margin: 1rem;
+    
 }
 .second-divider {
     border-top: 3px solid #bbb;
@@ -138,10 +178,69 @@ fieldset {
 
 footer {
     width: 100%;
+    font-size: 16px;
 
 }
 
 @media only screen and (min-width: 768px) {
+.container {
+    width: 768px;
+    flex-basis: auto;
+    align-items: center;
 }
+
+main {
+    width: 768px;
+}
+
+fieldset {
+    margin: auto;
+    width: 768px;
+    max-width: none;
+}
+
+.select-box {
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+} 
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        width: 100%;
+    }
+
+    fieldset {
+        margin: 0px;
+        width: 100%;
+    }
+
+    .c-form {
+        display: flex;
+        width: 75%;
+        margin: 1rem; 
+    }
+
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .select-box {
+        margin: 1rem;
+        width: 75%;
+    } 
+    
+
+  
+
+}
+
+
 
 
