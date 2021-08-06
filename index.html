@@ -33,27 +33,27 @@
                          
                            <div class="row">
                             <label for="name" class="c-label">Full Name</label>
-                            <input type="text" name="name" id="name" class="c-form" placeholder="Required">
+                            <input required type="text" name="name" id="name" class="c-form" placeholder="Required">
                         </div>
                         <div class="row">
                             <label for="email" class="c-label">Email Address</label>
-                            <input type="email" name="email" id="email" class="c-form" placeholder="Required">
+                            <input required type="email" name="email" id="email" class="c-form" placeholder="Required">
                         </div>
                         <div class="row">
                             <label for="phone" class="c-label">Phone Number</label>
-                            <input type="number" name="phone" id="phone" class="c-form" placeholder="Required" >
+                            <input required type="number" name="phone" id="phone" class="c-form" placeholder="Required" >
                         </div>
                             <div class="row">
                             <label for="address" class="c-label">Street Address</label>
-                            <input type="text" name="address" id="address" class="c-form" placeholder="Required">
+                            <input required type="text" name="address" id="address" class="c-form" placeholder="Required">
                         </div>
                             <div class="row">
                             <label for="city" class="c-label">City</label>
-                            <input type="text" name="city" id="city" class="c-form" placeholder="Required">
+                            <input required type="text" name="city" id="city" class="c-form" placeholder="Required">
                         </div>
                             <div class="row">
                             <label for="state" class="c-label">State</label>
-                            <select class="select-box" name="state" id="state" >
+                            <select class="select-box" required name="state" id="state" >
                                 <option disabled selected value> Choose a state </option>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="row">
                             <label for="zip" class="c-label">Zip Code</label>
-                            <input type="text" name="zip" id="zip" class="c-form" placeholder="Required">
+                            <input required type="text" name="zip" id="zip" class="c-form" placeholder="Required">
                         </div>
                         </div>
                 </fieldset>
@@ -149,7 +149,7 @@
                             </div>
                                 
                             <label for="other" class="check-label">Other topics you would like to hear about:</label>
-                                <textarea name="other" id="other" class="text-box" rows="10"></textarea> 
+                                <textarea name="other" id="other" class="text-box" rows="10" cols="50"></textarea> 
 
                             <button class="c-button" type="submit">Sign Up</button>  
                     </div>
