@@ -23,7 +23,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-    width:auto;
+    width: 768px;
 }
 
 h3 {
@@ -89,7 +89,6 @@ fieldset {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: grey;
-
 }
 
 .check-box {
@@ -102,7 +101,6 @@ fieldset {
     background-color: #eff0f1;
     padding: 1rem;
     border: none;
-    text-align: right;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 } 
@@ -119,7 +117,6 @@ select#state.select-box {
 
 .formstyle_button {
     display: inline;
-
 }
 
 .text-box {
@@ -146,9 +143,6 @@ select#state.select-box {
     outline: 3px solid rgb(104, 68, 231);
 }  
 
-
-
-
 .c-button {
     background-color: #4ebbb5;
     padding: 1.5rem;
@@ -167,19 +161,32 @@ select#state.select-box {
 }
 
 .first-divider {
-    border-top: 3px solid #bbb;
-    margin: 1rem;
-    
+    border-top: 6px solid #bbb;
+    padding-top: 4px;
+    border-bottom: 3px solid #bbb;
+    border-right: none;
+    border-left: none;
 }
+
 .second-divider {
     border-top: 3px solid #bbb;
-    margin: 1rem;
 }
 
 footer {
     width: 100%;
     font-size: 16px;
+}
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 @media only screen and (min-width: 768px) {
