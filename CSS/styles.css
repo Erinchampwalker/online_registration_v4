@@ -81,11 +81,14 @@ fieldset {
 }
 
 
-.c-form:focus {
+.c-form:focus, .c-form-zip:focus, .select-box:focus, .text-box:focus {
     outline: 3px solid rgb(104, 68, 231);
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+    transition: 0.3s;
 }
 
-.c-form:hover {
+.c-form:hover, .c-form-zip:hover, .select-box:hover, .text-box:hover {
     outline: 3px solid rgb(104, 68, 231);
     background-color: cornsilk;
     opacity: 0.6;
