@@ -42,7 +42,7 @@
                         </div>
                         <div class="row">
                             <label for="phone" class="c-label">Phone Number</label>
-                            <input required type="number" name="phone" id="phone" class="c-form" placeholder="Required" >
+                            <input required type="tel" name="phone" id="phone" class="c-form" placeholder="Required" >
                         </div>
                             <div class="row">
                             <label for="address" class="c-label">Street Address</label>
@@ -111,7 +111,7 @@
                             </div>
                             <div class="row">
                             <label for="zip" class="c-label">Zip Code</label>
-                            <input required type="text" name="zip" id="zip" class="c-form" placeholder="Required">
+                            <input required type="text" name="zip" id="zip" class="c-form-zip" placeholder="Required">
                         </div>
                         </div>
                 </fieldset>
@@ -142,16 +142,16 @@
                                 
                             <label>Choose a newsletter format:</label>
                             <div class="formstyle_button">
-                                <input type="radio" name="format2" id="format2" class="check-box" value="plaintext"> 
+                                <input type="radio" name="format" id="format1" class="check-box" value="plaintext"> 
                                 <label for="format1" class="check-label">HTML</label>
                             </div>
                             <div class="formstyle_button">
-                                <input type="radio" name="format1" id="format1" class="check-box" value="htmlform">
+                                <input type="radio" name="format" id="format2" class="check-box" value="htmlform">
                                 <label for="format2" class="check-label">Plain text</label>
                             </div>
                                 
                             <label for="other" class="check-label">Other topics you would like to hear about:</label>
-                                <textarea name="other" id="other" class="text-box" rows="10" cols="50"></textarea> 
+                                <textarea name="other" id="other" class="text-box" rows="10" cols="50" placeholder="Write Here"></textarea> 
 
                             <button class="c-button" type="submit">Sign Up</button>  
                     </div>

@@ -27,6 +27,11 @@ section {
     width: auto;
 }
 
+label {
+    margin-top: 1rem;
+
+}
+
 h3 {
     color: #2d3945;
     font-weight: bold;
@@ -48,15 +53,15 @@ p{
 fieldset {
     max-width: 350px;
     border: none;
+    padding: 1rem;
 
 }
 
 .formstyle {
     display: flex;
     flex-direction: column;
-    -ms-flex-align: start;
     width: 100%;
-
+    padding: 1rem;
 }
 
 .c-label {
@@ -72,9 +77,9 @@ fieldset {
     padding: 1rem;
     border-radius: 5px;
     border: none;
-    width: 100%;
-    margin-right: 0.5rem;   
+    width: 100%; 
 }
+
 
 .c-form:focus {
     outline: 3px solid rgb(104, 68, 231);
@@ -85,8 +90,16 @@ fieldset {
     background-color: cornsilk;
     opacity: 0.6;
     transition: 0.3s;
+}
 
-}    
+.c-form-zip {
+    background-color: #eff0f1;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    display: block;
+}
 
 .check-label {
     font-size: 14px;
@@ -105,8 +118,8 @@ fieldset {
     background-color: #eff0f1;
     padding: 1rem;
     border: none;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
 } 
 
 select#state.select-box {
@@ -129,6 +142,7 @@ select#state.select-box {
     border: none;
     border-radius: 5px;
     resize: none;
+    width: 100%;
 }
 
 .text-box:focus {
@@ -191,21 +205,9 @@ footer p {
 
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 @media only screen and (min-width: 768px) {
 .container {
-    width: 768px;
+    width: 100%;
     flex-basis: auto;
     align-items: center;
 }
@@ -214,22 +216,22 @@ main {
     width: 768px;
 }
 
+.formstyle {
+    -ms-flex-align: start;
+}
+
 fieldset {
-    margin: auto;
-    width: 768px;
+    margin: 0px;
+    width: 100%;
     max-width: none;
 }
 
 .select-box {
     display: flex;
-    width: 100%;
+    width: 75%;
     padding-top: 1rem;
     padding-bottom: 1rem;
 } 
-
-}
-
-@media only screen and (min-width: 1200px) {
 
     .container {
         width: 100%;
@@ -243,17 +245,23 @@ fieldset {
     .c-form {
         display: flex;
         width: 75%;
-        margin: 1rem; 
+    }
+
+    .c-form-zip {
+        width: 25%;
     }
 
     .row {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        
     }
+
     .select-box {
-        margin: 1rem;
         width: 75%;
     } 
     
