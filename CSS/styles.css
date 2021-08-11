@@ -234,42 +234,25 @@ fieldset {
     width: 75%;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.c-form {
+    display: flex;
+    width: 75%;
+}
+
+.c-form-zip {
+    width: 25%;
+}
+
+.row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 } 
-
-    .container {
-        width: 100%;
-    }
-
-    fieldset {
-        margin: 0px;
-        width: 100%;
-    }
-
-    .c-form {
-        display: flex;
-        width: 75%;
-    }
-
-    .c-form-zip {
-        width: 25%;
-    }
-
-    .row {
-        display: flex;
-        flex-flow: row;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        
-    }
-
-    .select-box {
-        width: 75%;
-    } 
-    
-
-  
 
 }
 
